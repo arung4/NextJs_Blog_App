@@ -21,6 +21,6 @@ describe('PostList Component', ()=>{
      // 
      it('shows message when no blogs are passed', () => {
     render(<PostList blogs={[]} />);
-    expect(screen.getByText(/no blogs to display/i)).toBeInTheDocument();
+    expect(screen.getByText(/No blogs available./i)).toBeInTheDocument();
   });
 })

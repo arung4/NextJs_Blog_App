@@ -9,6 +9,8 @@ const mockBlog = {
   description: 'This is a test blog description',
   source_name: 'News Source',
   link: 'https://example.com',
+  category: ['Technology'],
+  image_url: '',
 };
 
 describe('PostDetail Component', () => {

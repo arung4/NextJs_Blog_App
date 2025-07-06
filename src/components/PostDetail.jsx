@@ -1,4 +1,5 @@
 import React from 'react'
+import fallbackImage from "../../public/fallback.png" ;
 
 function PostDetail({blog}) {
   return (
@@ -16,7 +17,9 @@ function PostDetail({blog}) {
       </div>
       {/* Image container  */}
       <div>
-        <img className='border rounded-2xl' src={blog.image_url} alt="none" />
+       {blog.image_url && (
+         <img src={blog.image_url|| fallbackImage } alt="Blog Image" className="border rounded-2xl" />
+      )}
       </div>
       {/* Blog Description */}
       <p className='mt-3 text-justify'>{blog.description || ""}</p>
