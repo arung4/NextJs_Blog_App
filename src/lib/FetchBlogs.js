@@ -1,5 +1,6 @@
 
-const API_KEY = 'pub_c03afa6463d840b59ac4208aa1944215';
+const API_KEY = process.env.API_KEY
+
  export default async function FetchBlogs() {
   try {
     // write api call to fetch the blogs
