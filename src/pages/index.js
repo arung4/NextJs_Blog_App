@@ -4,7 +4,7 @@ import BlogPage from './posts'
 function Home() {
   return (
     <div>
-       <h1>Home Page</h1>
+       <h1 className='text-4xl font-bold mt-52 ml-60'>Home Page</h1>
     </div>
   )
 }
